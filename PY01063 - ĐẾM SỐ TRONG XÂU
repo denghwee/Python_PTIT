@@ -1,0 +1,15 @@
+# I'm DengHwee or you can call me Chimmey
+
+for i in range(int(input())):
+    s = input()
+    n = input()
+    start = 0
+    ans = 0
+    while True:
+        pos = s.find(n, start, len(s))
+        if pos != -1:
+            ans += 1
+            start = pos + len(n) + 1
+        else:
+            break
+    print(ans)
