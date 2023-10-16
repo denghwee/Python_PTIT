@@ -34,6 +34,6 @@ for x in range(t):
     a += [float(i) for i in input().split()]
 i = 0
 for index in range(t):
-    triagle = Triangle(Point(a[i], a[i+1]), Point(a[i+2], a[i+3]), Point(a[i+4], a[i+5]))
-    triagle.cnt()
+    triangle = Triangle(Point(a[i], a[i+1]), Point(a[i+2], a[i+3]), Point(a[i+4], a[i+5]))
+    triangle.cnt()
     i += 6
