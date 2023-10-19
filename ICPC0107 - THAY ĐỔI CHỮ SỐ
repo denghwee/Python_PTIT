@@ -1,0 +1,17 @@
+# I'm DengHwee or you can call me Chimmey
+
+for i in range(int(input())):
+    a, b = list(map(int, input().split()))
+    if a < b :
+        a, b = b, a
+    num1 = input().strip()
+    if num1.count(' '):
+        num1, num2 = num1.split()
+    else:
+        num2 = input()
+    num3 = num1.replace(str(a), str(b))
+    num4 = num2.replace(str(a), str(b))
+    print((int(num3) + int(num4)), end = ' ')
+    num3 = num1.replace(str(b), str(a))
+    num4 = num2.replace(str(b), str(a))
+    print(int(num3) + int(num4))
